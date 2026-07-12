@@ -1,3 +1,7 @@
+output "data_factory_dataset_azure_blobs_id" {
+  description = "Map of id values across all data_factory_dataset_azure_blobs, keyed the same as var.data_factory_dataset_azure_blobs"
+  value       = { for k, v in azurerm_data_factory_dataset_azure_blob.data_factory_dataset_azure_blobs : k => v.id }
+}
 output "data_factory_dataset_azure_blobs_additional_properties" {
   description = "Map of additional_properties values across all data_factory_dataset_azure_blobs, keyed the same as var.data_factory_dataset_azure_blobs"
   value       = { for k, v in azurerm_data_factory_dataset_azure_blob.data_factory_dataset_azure_blobs : k => v.additional_properties }
