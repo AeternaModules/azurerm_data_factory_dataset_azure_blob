@@ -28,8 +28,8 @@ EOT
     additional_properties    = optional(map(string))
     annotations              = optional(list(string))
     description              = optional(string)
-    dynamic_filename_enabled = optional(bool) # Default: false
-    dynamic_path_enabled     = optional(bool) # Default: false
+    dynamic_filename_enabled = optional(bool)
+    dynamic_path_enabled     = optional(bool)
     filename                 = optional(string)
     folder                   = optional(string)
     parameters               = optional(map(string))
